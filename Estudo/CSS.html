@@ -1,0 +1,316 @@
+MDN - Manual <HTML></HTML><CSS></CSS>
+
+
+UTF-8
+1024 bytes = 1KB
+1024 KB = 1MB
+1024 MB = 1GB
+1024 GB = 1TB
+1024 TB = PB
+1024 PB = EB
+1024 EB = ZB
+1024 ZB = YB
+
+CSS Inline = Adiciona propriedade somente no conteúdo daquela tag 
+
+CSS Outline = Adiciona de uma forma geral para todos os elementos ditos (tag style dentro da head, por exemplo)
+tag <style></style>
+
+<a href="index.html">Prática</a>
+
+Prioridades das propriedades:
+1 - Dentro da tag
+2 - Dentro da página
+3 - Externo
+
+
+
+atalhos:
+digitar tag sem <> e ."nome da classe"
+ex: div.contain
+
+site:
+lorem.picsum
+
+shift+alt+seta - copia e cola
+
+Propriedades:
+
+background: color; - define uma cor de fundo
+background: ; - para aquela parte
+color: "X"; - cor da fonte
+font-size: XXpx; tamanho da fonte
+text-align - centralizar texto
+
+Pode ser mais apropriado criar um arquivo separado para as propriedades CSS
+
+utilizar <link rel="stylesheet" href="css/estilo.css">
+
+Classes:
+
+utilizar o "." com um texto ao lado (não necessariamente que faça sentido ) e adicionar uma propriedade. Logo após pode ser aplicada na tag pela propriedade class="XXX
+
+.vermelho{
+    color: white;
+}
+
+.center{
+    text-align:center;
+}"
+<p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vero rerum neque sunt nihil consequuntur iusto sit? Maxime quis excepturi corporis quia magnam, expedita, nemo delectus saepe earum quibusdam illo.</p>
+<p class="center vermelho">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vero rerum neque sunt nihil consequuntur iusto sit? Maxime quis excepturi corporis quia magnam, expedita, nemo delectus saepe earum quibusdam illo.</p>
+
+
+background:
+
+colocar imagem de fundo:
+height: XXpx
+backgorund-color: gray:
+background-image:url("../img/back1.jpg"); - indica o caminho até a imagem
+background-size:contain; - caso use contain somente, a imagem irá se repetir
+Então use background-repeat: no-repeat;
+ou use cover no lugar de "contain"
+background-position: - top, center, rigth ou left - difine posição da imagem
+
+Da para fazer de uma vez, por exemplo:
+backgrounf: gray url("../img/back1.jpg")  no-repeat center:
+background-size:cover;
+
+
+<!-- Bordas -->
+border:Xpx - adiciona Borda
+propriedade em conjunto
+solid - borda linear
+dotted - borda pontilhada
+dashed - com tracinhos
+double - Duas Bordas
+groove - com efeito 3d
+ridge -
+inset - por dentro
+outset - por fora
+none - nenhuma
+hidden - oculta
+
+é possivel personalizar cada lado da borda pela:
+border-top:
+border-left:
+border-right:
+border-bottom:
+
+Arredondar borda por:
+border-radius:X%; (ou Xpx)09
+
+
+Margem (afastar): usar % ou px
+
+margin-top: 20%;
+margin- right: 20%;
+margin-bottom: 20%;
+margin-left: 20%;
+
+Ou ropriedade margin: 10px 10px 10px 10px (representada identica a ordem acima)
+
+Padding (preencher e a afastar por dentro do conteudo)
+
+padding-top:40px;
+padding-right:40px;
+padding-bottom:40px;
+padding-left:40px;
+
+Ou ropriedade padding: 10px 10px 10px 10px (representada identica a ordem acima)
+ou caso use só um px, utiliza o tamanho para todos os lados
+
+.botao{
+    margin-left: 40%;
+    margin-top: 20%;
+    background: red;
+    color: black;
+    padding: 40px;
+    border-radius: 5px;
+}
+.botao:hover{
+    background: blue;
+}
+:hover (apos classe)
+adiciona uma interação ao passar o mouse
+
+text-decoration: none; - tirar dedocaração do texto
+
+
+tamanho:
+
+max-width: 800px;
+    max-height: 150px;
+
+    Agora conhecemos um limitador de tamanho do elemento, usado principalmente para dipositivos moveis
+
+
+
+Propriedade text:
+
+text-aling: xxx; - posição do texto, a direita, esquerda, centralizar,justificado...
+
+direction: rtl; direção de leitura
+unicode-bidi; bidi-override; - ao contrario
+text-decoration: overline; - linha por cima
+text-decoration: line=through; - riscado
+text-transform:uppercase; - deixar em maiusculo
+text-transform:lowercase; - deixar em minusculo
+text-transform:capitalize; - deixar a primeira letra em maiusculo
+text-indent: XXpx; - recuo de parágrafo
+letter-spacing: Xpx; espaçamento entre as letras
+line-heigth:X.X; - espaçamento entre linhas
+word-spacing: XXpx - espaçamento entre palavras
+
+style="text-decoration: none;" - tirar sublinhado de links
+
+font-size - tamanho
+font-family - tipo da fonte
+font-style - estilo de fonte
+font-weight:bold; - negrito
+
+google font para importar fonte na página
+
+
+criar efeito sobre os links
+
+a.botao1{
+    background: red;
+    color: antiquewhite;
+    padding: 10px;
+    text-decoration: none;
+    border: 5px solid black;
+    border-radius: 25%;
+}
+a.botao1:hover{
+    background: rgb(182, 35, 35);
+    padding: 17px;
+    border: 5px solid rgb(236, 36, 36);
+}
+
+cursor: ; - para mudar o cursor
+
+
+Display:
+
+Block - layout em blocos
+Inline - layout na mesma linha
+inline-block - na mesma linha, mas em blocos
+none - desaparecer
+visibility: hidden; - desaparecer, mas apenas invisivel(ainda ocupa espaço)
+
+
+Max-width - define o máximo de largura
+Usar em contextos; como imagem, dispositivos moveis...
+
+
+position:
+
+relative
+fixed - em relação a tela
+abdolute
+sticky - Acompanha com a rolagem (Contida até a tag "pai")
+position: sticky;
+    top:0
+
+
+
+z-index: X; - trabalho de camada dos elementos
+
+opacity - tranparência no olemento
+
+Overflow: Exibição na caixa do conteudo da tag
+
+visible - Mostra o conteudo mesmo que esteja fora da caixa
+hidden - Mostra apenas o que cabe na caixa
+scroll - coloca rolamento para ler no conteudo
+auto - funciona como o 'scroll' mas só funciona quando existe necessidade
+
+remover barra rolagem
+overflow-x: hidden;
+overflow-yokk: hidden;
+
+Float: Faz o conteudo descrito "flutuar"(importante)
+
+usar direções
+
+Opacity: opacidade de 0.0 até 1.0
+
+Dropdown:
+
+list-style-type:none;
+
+
+Menu de lista:
+
+
+<ul>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    <li class="dropdown">
+      <a class="dropbtn" href="#">Link</a>
+      <div class="dropdown-content">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    </li>
+
+ul{
+    background: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn{
+    display:inline-block;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background: red;
+}
+
+li.drodown{
+    display: inline;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background: white;
+    width: 150px;
+}
+
+.dropdown-content a{
+    color:black;
+    display: block;
+    text-align: left;
+    border: 1px solid;
+}
+
+.dropdown-content a:hover{
+    color: aliceblue;
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+
+
+

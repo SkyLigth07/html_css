@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+Em HTML id = Em CSS #
+Em HTML class = Em CSS .
+*/
+
+
+
+body{
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: rgb(15, 15, 199);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+h2{
+    color: rgb(5, 5, 100);
+}
+.basico{
+    color: rgb(8, 172, 8);
+    font-weight: bold;
+
+}
+.intermediario{
+    color: blueviolet;
+}
+
+.avancado{
+    color: red;
+
+}
+
+.destaque{
+    background-color: yellowgreen;
+}

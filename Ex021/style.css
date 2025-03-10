@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+:root{
+    --fonte-padrao: arial,verdana;
+    --fonte-destaque:'Bebas Nues', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: #65F54C;
+    width: 100%;
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image: linear-gradient(to  bottom, #71CC61, #6FA067, #1B3317);
+    min-height: 100%;
+    padding-top: 10px;
+    color:white;
+    }
+header > P{
+    color: white;
+
+}
+h1{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+header>nav>a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: 200;
+    border-radius: 5px;
+    transition-duration: 0.5;
+
+
+}
+header>nav>a:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
+main{
+    min-height: 300px;
+    max-width: 1000px;
+background-color:antiquewhite;
+margin: auto;
+border-radius: 5px;
+box-shadow: 0px 0px 8px black;
+}
+main p{
+    margin: 10px;
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+}
+main>article>h2{
+    font-family: var(--fonte-android)
+}
+    section#extra{
+        background-color: lightgreen;
+        
+    }
+    .topicos{
+        background-color: rgba(13, 211, 13, 0.26);
+}
+
+aside{
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 8%;
+}
+aside > h3{
+    background-color: #1B3317;
+    color: white;
+    padding: auto;
+    
+
+}
+aside > ul{
+    list-style-type: '\2714\00a0';
+    list-style-position: inside;
+    columns: 3;
+}
+
+footer{
+    background-color: #1B3317;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+footer a {
+    font-weight: 600;
+    color: beige;
+    text-decoration: underline;
+}
+footer a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+
+.destacar{
+    background-color: #71CC61;
+    font-size: 18px;
+    color: #1B3317;
+}

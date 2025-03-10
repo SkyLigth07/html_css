@@ -1,0 +1,260 @@
+
+Comandos:
+html:5 Forma a base pro código
+alt+z = Codigo aparecer conforme tamanho da tela
+
+
+Parte estrutural:
+
+<title></title> - Define o título do site
+<h1></h1> - Título do texto
+<p></p> - Parágrafo/Linha
+
+Formatação:
+
+<b></b> - Negrito
+<strong></strong> - Negrito (enfâse)
+<i></i> - Itálico
+<u></u> - Sublinhar
+<hr> - Linha de divisão
+<br> - pular uma Linha
+&nbsp; - espaçamento
+<small></small> - diminuir o texto
+<del></del> - riscado (deletado)
+<sup></sup> - superior (para número exponencias por EX)
+<sub></sub> - inferior
+<mark></mark> - marcação de texto (destacar)
+
+<abbr></abbr> - coloca explicação da abreviatura no texto ao colocar o mouse por cima
+colocar - title="" (Com o texto desejado)
+<addres></addres> - Endereços (Fisíco, email, site e etc)
+<cite></cite> - Quando citar alguma obra
+<q></q> - Quando utilizar uma citação (falas, por exemplo)
+<blockquote></blockquote> - Citação para destacar o texto do site
+<bdo dir="" (sentido do texto)
+
+<!----> - Adicionar comentarios sobre o código
+Caso coloque a metade entre o começo e o fim, 'esconde o código' <!--<p>Tipo isso</p>-->
+Ctrl+k+c = atalho pro exemplo acima, selecionando com o mouse
+<a></a> - Link
+
+<img> - Imagem no site
+Atributo em conjunto src="" (link da imagem por exemplo)
+em seguida pode ser adequar o tamanho de imagem pela propriedade width-"X" e/ou heigth= "X"
+alr="XXXXX" - Adiciona comentario sobre a imagem, para mecanismo de buscas e leitores para deficiente visuais.
+"é bom comprimir a imagem para desempenho do site" como easy resize e outros.
+Photopea - editor de imagem
+<map></map> - linkar em areas especificas da imagem (usar mapeamento, site)
+Da para linkar as imagens com a tag <a></a> - Contanto que esteja nas extremidades de <img>
+
+Tabelas:
+<table> - propriedade width="" (espaçamento) e border="X" (bordas) style="text-align: center;" (centraliza texto das células)
+    - Tabelas no site
+    -<tr>
+       -<th></th> - para título de coluna
+       -<td></td> - para informações na célula
+
+    </tr> - linha da tabela
+</table>
+
+Listas:
+
+<ul> - Listas não ordenadas
+    <li></li> - Conteúdo da lista
+</ul>
+
+<ol> - Listas ordenadas
+    <li></li> - Conteúdo da lista
+</ol>
+
+Rodar sites externos dentro do site:
+
+<iframe> 
+</iframe>
+
+Atributos
+<iframe style="border:none;" scr="" width="%" heigth="" title=""></iframe>
+
+Formularios:
+<form> - Formulário (colocar action=) - sobre o recebimento do formulario
+    <label></label> - Tópico da pergunta
+    <input> - Caixa de texto
+    ^tipe="text" e placeholder"aaaaaa" (texto em marca d'agua informativo)
+
+    Interção com clique ou toque,
+    label - for"campo_AAAAAA"
+    input - id"campo_AAAAAA"
+
+    Senha (esconder)- utilizar type="password"
+    email - ultilizar type="email"
+    Enviar - type="submit" e value="AAAAA"
+
+
+    usar propriede required no final da tag <input>, para tornar o preenchimento obrigatório
+
+    <form> 
+        <!--Legenda-->
+        <label for="campo_nome">Nome:</label><br>
+        <!--Campo de nome-->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome">
+        
+        <!--Legenda-->
+        <label for="campo_senha">Senha:</label><br>
+        <!--Campo password-->
+        <input id="campo_senha" type="password" placeholder="Digite uma senha"><br>
+
+        <!--Legenda-->
+        <label for="campo_email">Email:</label><br>
+        <!--campo email-->
+        <input id="campo_email" type="email" placeholder="Digite um email"><br><br>
+
+        <!--Campo submit-->
+        <input type="submit" value="Enviar formulario">
+
+
+        Utilizar apenas 1 escolha das opções
+        <h2>Animal de estimação</h2>
+        <input type="radio" id="dog" name="animal" value="Cachorro">
+        <label for="dog">Cachorro</label>
+
+        <br><br>
+
+        <input type="radio" id="cat" name="animal" value="Gato">
+        <label for="cat">Gato</label>
+
+        Utilizar multipla-escolha
+        <input id="item1" type="checkbox" name="item1" value="TV>">
+        <label for="item1">TV</label><br><br>
+
+        <input id="item2" type="checkbox" name="item2" value="PC>">
+        <label for="item2">PC</label><br><br>
+        
+        Selecionar opções
+        <select name="cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="verde">Verde</option>
+        </select>
+        
+        Caixa de mensagem livre para o usuário
+
+        <textarea rows="15" cols="55">Texto de exemplo</textarea>
+        rows - linhas
+        cols - colunas
+
+        <button>Clique aqui</button> - adiciona botão (Se estiver "seco" dentro do <form></form>, vai enviar o formulário)
+
+
+    </form><br>
+
+</form>
+
+AUDIO:
+
+Utilizar a tag <audio></audio> 
+Atributo controls - adiciona player de audio
+
+
+Dentro com Atributo source=""
+
+tipo de audio e seu type:
+MP3 - mpeg
+OGG - OGG
+wav - wav
+
+<body>
+    <h1>Página de Áudio</h1>
+
+    <audio controls controlslist="nodownload">
+        <source scr="audio/Bugatti.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+
+VIDEO:
+
+<video poster="img/Lewis.avif" width="100%"  autoplay controls controlslist="nodownload nofullscreen" disablepictureinpicture>
+    <source src="video/OBRIGADO POR ASSISTIR, PERSONAGENS DE MINECRAFT DANÇANDO - MEME BASE   DOWNLOAD.mp4" type="video/mp4">
+</video>
+
+Atributos:
+poster - thumbnail
+autoplay - tocar automaticamente
+controls - controles do video
+controlslist; nodownload- sem baixar/ nofullscreen - sem tela cheia
+disablepictureinpicture - sem video em segundo plano
+
+
+SEMANTICA:
+
+<div></div> - Uma tag neutra apenas usada para usar propriedades CSS em partes do texto.
+
+Entretanto, nada impede e pode ser melhor para quem ler o codigo, utilizar outras tags que cumpram a mesma função, mas especifiquem o que é aquela parte do site, como:
+ 
+<header></header> - Topo do site/cabeçalho
+<nav></nav> - menu de navegação
+<section></section> - seção de leitura
+<footer></footer> rodapé
+
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .topo{
+        background-color:aquamarine;
+        padding: 20px;
+        text-align: center;
+    }
+    .menu{
+        background-color:black;
+        overflow:hidden;
+    }
+    .menu a{
+        color:bisque;
+        padding: 14px 16px;
+        float: left;
+        display: block;
+        text-decoration: none;
+    }
+    .coluna1{
+        float: left;
+        width: 50%;
+        padding: 15px;
+    }
+        
+</style>
+</head>
+
+<body>
+
+<header class="topo">
+    <h1>Topo</h1>
+    <p>Aqui a parte do topo</p>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+</nav>
+
+<section class="coluna1">
+    <h2>Coluna</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo placeat dicta modi iure consequatur veritatis dignissimos fuga minima inventore perspiciatis nisi ipsam atque quam odit itaque ut, voluptatem iste?</p>
+</section>
+
+<div class="coluna1">
+    <h2>Coluna</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo placeat dicta modi iure consequatur veritatis dignissimos fuga minima inventore perspiciatis nisi ipsam atque quam odit itaque ut, voluptatem iste?</p>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2M0inetghnk?si=gHoEm98KVxAHNOH_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
