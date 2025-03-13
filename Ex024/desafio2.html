@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio parte 2</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        tr,td, th{
+            border: 2px solid black;
+        }
+        th{
+            background-color: gray;
+            color: wheat;
+        }
+        .normal{
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notas</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tr>
+            <tbody>
+                <th rowspan="4" class="normal" colspan="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                        <tr>
+                <td>Fisica</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                        <tr>
+                <td>Quimica</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                        <tr>
+                <td>Biologia</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                        <tr>
+                <th colspan="4">Media de Exatas</th>
+                <th>11.4</th>
+                        </tr>
+                        <tr>
+                <th rowspan="2" class="normal" colspan="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                        <tr>
+                <td>Geografia</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                <td>5.7</td>
+                        </tr>
+                <tr>
+                    <th colspan="4">Media de Humanas</th>
+                    <th>11.4</th>
+                </tr>
+            </tbody>
+    </table>
+    <h2>Amo oce</h2>
+</body>
+</html>
