@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    background-color: wheat;
+}
+
+
+header{
+    background-color: gray;
+}
+
+header>h1{
+    text-align: center;
+    padding: 10px;
+}
+
+
+menu{
+    display: block;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    
+}
+li>a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: dashed;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+li>a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+main{
+    margin: auto;
+    margin-top: 10px;
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px gray;
+}
+
+main>article{
+    text-align: justify;
+    text-indent: 1,5px;
+}
+header>span#burguer{
+    background-color: black;
+    display: inline-block;
+    color: white;
+}
+span#burguer:hover{
+    background-color: white;
+}
+
+
